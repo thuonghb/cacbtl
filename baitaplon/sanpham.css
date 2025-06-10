@@ -1,0 +1,122 @@
+/* Reset mặc định của trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Thiết lập chung cho toàn bộ trang */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Banner */
+.banner {
+    background: url('anh/banner.jpg') no-repeat center center/cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.banner h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+/* Top Menu */
+.top-menu {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Đặt khoảng cách giữa các phần tử */
+}
+
+.top-menu .menu {
+    display: flex;
+    align-items: center;
+}
+
+.top-menu ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu ul li {
+    margin-right: 15px;
+}
+
+.top-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.top-menu ul li a:hover {
+    color: #f4f4f4;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+/* Định dạng form tìm kiếm trong cùng dòng với menu */
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Đẩy form tìm kiếm sang phải */
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-form button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #d9534f;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.search-form button:hover {
+    background-color: #c9302c;
+}
+
+/* Main Content */
+main {
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #fff;
+    min-height: 80vh;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
